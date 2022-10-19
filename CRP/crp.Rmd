@@ -1,0 +1,363 @@
+---
+title: "Практическая работа. Китайская теорема об остатках. Модулярная арифметика"
+output:
+  word_document: default
+  html_document: default
+---
+
+## Задача №1. КТО
+
+Для $n = (n_1, n_2, \dots, n_k), n_i \in \mathbf{Z}$ -- модулей системы, таких что $НОД(n_i, n_j) = 1, i\ne j$; $b = (b_1, b_2, \dots, b_k), b_i \in \mathbf{Z}$ -- остатков по модулю, таких что $0 < b_i < n_i$; найти $x(l), l=0,1,2,\dots$:
+
+$$
+\exists x\in \mathbf{Z}: 
+\left\{  
+\begin{matrix}
+  x &=& b_1 \{n_1\} \\
+  x &=& b_2 \{n_2\}  \\
+  &\dots& \\
+  x &=& b_k \{n_k\}
+\end{matrix}
+\right.
+$$
+
+Для вариантов:
+
+
+1.
+$$
+\left\{
+\begin{matrix} 
+x =    1\{4\}\\
+x =    6\{7\}\\
+x =   10\{29\}
+\end{matrix}
+\right.
+$$
+
+
+2.
+$$
+\left\{
+\begin{matrix} 
+x =    1\{3\}\\
+x =    9\{11\}\\
+x =    6\{13\}
+\end{matrix}
+\right.
+$$
+
+3.
+$$
+\left\{
+\begin{matrix} 
+x =    2\{5\}\\
+x =    9\{11\}\\
+x =   12\{17\}
+\end{matrix}
+\right.
+$$
+
+4.
+$$
+\left\{
+\begin{matrix} 
+x =    9\{11\}\\
+x =    2\{19\}\\
+x =    5\{23\}
+\end{matrix}
+\right.
+$$
+
+5.
+$$
+\left\{
+\begin{matrix} 
+x =    2\{5\}\\
+x =    6\{7\}\\
+x =    2\{19\}
+\end{matrix}
+\right.
+$$
+
+6.
+$$
+\left\{
+\begin{matrix} 
+x =    9\{11\}\\
+x =   13\{14\}\\
+x =   12\{17\}
+\end{matrix}
+\right.
+$$
+
+7.
+$$
+\left\{
+\begin{matrix} 
+x =    1\{3\}\\
+x =    6\{7\}\\
+x =   10\{29\}
+\end{matrix}
+\right.
+$$
+
+8.
+$$
+\left\{
+\begin{matrix} 
+x =    9\{11\}\\
+x =    1\{12\}\\
+x =    6\{13\}
+\end{matrix}
+\right.
+$$
+
+9.
+$$
+\left\{
+\begin{matrix} 
+x =    2\{5\}\\
+x =    6\{7\}\\
+x =   10\{29\}
+\end{matrix}
+\right.
+$$
+
+10.
+$$
+\left\{
+\begin{matrix} 
+x =    1\{4\}\\
+x =    7\{10\}\\
+x =    9\{11\}
+\end{matrix}
+\right.
+$$
+
+11.
+$$
+\left\{
+\begin{matrix} 
+x =    2\{5\}\\
+x =    9\{11\}\\
+x =   12\{17\}
+\end{matrix}
+\right.
+$$
+
+12.
+$$
+\left\{
+\begin{matrix} 
+x =    7\{10\}\\
+x =    2\{19\}\\
+x =    5\{23\}
+\end{matrix}
+\right.
+$$
+
+13.
+$$
+\left\{
+\begin{matrix} 
+x =    2\{5\}\\
+x =    6\{7\}\\
+x =    1\{24\}
+\end{matrix}
+\right.
+$$
+
+14.
+$$
+\left\{
+\begin{matrix} 
+x =    9\{11\}\\
+x =   13\{14\}\\
+x =    2\{19\}
+\end{matrix}
+\right.
+$$
+
+15.
+$$
+\left\{
+\begin{matrix} 
+x =    1\{3\}\\
+x =    9\{11\}\\
+x =   10\{29\}
+\end{matrix}
+\right.
+$$
+
+16.
+$$
+\left\{
+\begin{matrix} 
+x =    9\{11\}\\
+x =    1\{12\}\\
+x =    5\{23\}
+\end{matrix}
+\right.
+$$
+
+17.
+$$
+\left\{
+\begin{matrix} 
+x =    2\{5\}\\
+x =    1\{12\}\\
+x =   10\{29\}
+\end{matrix}
+\right.
+$$
+
+18.
+$$
+\left\{
+\begin{matrix} 
+x =    1\{4\}\\
+x =    9\{11\}\\
+x =   12\{17\}
+\end{matrix}
+\right.
+$$
+
+19.
+$$
+\left\{
+\begin{matrix} 
+x =    2\{5\}\\
+x =    1\{12\}\\
+x =   12\{17\}
+\end{matrix}
+\right.
+$$
+
+20.
+$$
+\left\{
+\begin{matrix} 
+x =    9\{11\}\\
+x =    2\{19\}\\
+x =    1\{24\}
+\end{matrix}
+\right.
+$$
+
+21.
+$$
+\left\{
+\begin{matrix} 
+x =    2\{5\}\\
+x =    6\{7\}\\
+x =    9\{11\}
+\end{matrix}
+\right.
+$$
+
+22.
+$$
+\left\{
+\begin{matrix} 
+x =    9\{11\}\\
+x =   13\{14\}\\
+x =    1\{24\}
+\end{matrix}
+\right.
+$$
+
+23.
+$$
+\left\{
+\begin{matrix} 
+x =    1\{3\}\\
+x =    6\{7\}\\
+x =   17\{20\}
+\end{matrix}
+\right.
+$$
+
+24.
+$$
+\left\{
+\begin{matrix} 
+x =    9\{11\}\\
+x =    1\{12\}\\
+x =    6\{13\}
+\end{matrix}
+\right.
+$$
+
+25.
+$$
+\left\{
+\begin{matrix} 
+x =    2\{5\}\\
+x =    9\{11\}\\
+x =   10\{29\}
+\end{matrix}
+\right.
+$$
+
+26.
+$$
+\left\{
+\begin{matrix} 
+x =    1\{4\}\\
+x =    9\{11\}\\
+x =   12\{17\}
+\end{matrix}
+\right.
+$$
+
+27.
+$$
+\left\{
+\begin{matrix} 
+x =    1\{3\}\\
+x =    7\{10\}\\
+x =   12\{17\}
+\end{matrix}
+\right.
+$$
+
+28.
+$$
+\left\{
+\begin{matrix} 
+x =    9\{11\}\\
+x =    6\{13\}\\
+x =    5\{23\}
+\end{matrix}
+\right.
+$$
+
+29.
+$$
+\left\{
+\begin{matrix} 
+x =    2\{5\}\\
+x =    6\{13\}\\
+x =    2\{19\}
+\end{matrix}
+\right.
+$$
+
+30.
+$$
+\left\{
+\begin{matrix} 
+x =    7\{10\}\\
+x =    9\{11\}\\
+x =   12\{17\}
+\end{matrix}
+\right.
+$$
+
+
+## Задача №2. Модулярная арифметика
+
+Для каждого варианта задачи №1 сложить число, представленное в системе в остаточных классах, с числом из варианта $(n * 3) \{31\}$, где $n$ -- номер варианта в СОК. Перевести полученное в результате сложения число в десятичную систему счисления с помощью КТО.
+
+Умножить данные числа в СОК. Перевести полученное в результате умножения число в десятичную систему счисления с помощью полиадического кода.
